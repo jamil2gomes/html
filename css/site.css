@@ -1,26 +1,37 @@
 body {
 	font-family: "Crimson Text", "Times New Roman", serif;
-	background-color: #F2FFFC;
+    background-color: #F2FFFC;
 	font-size: 120%;
-	line-height: 1.5;
+	line-height: 1.5; /*espaçamento entre as linhas*/
 }
 
 h1, h2 {
 	font-family: "Open Sans Condensed", "Arial", sans-serif;
 }
 
-.cabecalho-principal {
-	text-align: center;
-	background-color: #851944;
-	color: #FFF;
-	padding: 25px;
-	border-bottom: 10px solid black;
-	font-size: 60px;
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
 }
 
 p {
 	text-align: justify;
 	margin: 20px 0;
+}
+
+.cabecalho-principal {
+	text-align: center;
+    background-color: #851944;
+    background-image: url(https://66.media.tumblr.com/3ef90c696ab6cf6b8622764d760e3b13/tumblr_ojkxuhdnKJ1tndn6wo1_540.gif);
+    background-repeat: round;
+	color: #FFF;
+	padding: 25px;
+	border-bottom: 10px solid black;
+    font-size: 60px;
+    text-transform: uppercase;
 }
 
 .citacoes {
@@ -31,40 +42,61 @@ p {
 	margin: 20px 40px;
 }
 
+.citacoes, aside, footer {
+    padding: 20px;
+}
+
+.primeira-citacao, .data-post{
+    float: right;
+}
+
+.segunda-citacao,.imagem-personagem{
+    float: left;
+}
+
+cite {
+    font-style: italic;
+    float: right;
+}
+
+.imagem-personagem{
+    width: 100%;
+}
+
 .navegacao {
 	background-color: #3C1D3D;
     color: #F2FFFC;
     text-align: center;
+    box-sizing: border-box;
 }
 
-.rodape {
-	background-color: #000;
-    color: #F2FFFC;
-    padding: 20px;
+.navegacao a {
+    color:inherit;  
+    font-family: "Open Sans Condensed", sans-serif;
 }
 
-nav a {
-    color: #F2FFFC;
-    
+.navegacao h1 {
+	font-size: 30px;
+	margin-bottom: 25px;
 }
 
-article {
-    padding-bottom: 30px;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 20px;
-}
 
 main a {
 	color: #851944;
 }
 
-.navegacao a {
-	color: inherit;
-    font-family: "Open Sans Condensed", sans-serif;
+main {
+    width: 70%;
+    float: left;
+    padding-bottom: 80px;
 }
 
-.citacoes, aside, footer {
-    padding: 20px;
+.img-principal, aside {
+    width: 30%;
+    float: right;
+    border-left: 10px solid black;
+    border-bottom: 10px solid black;
+    box-sizing: border-box;
 }
 
 .conteudo-centralizado {
@@ -77,9 +109,23 @@ main a {
     display: inline-block;
 }
 
-aside h1 {
-	font-size: 30px;
-	margin-bottom: 25px;
+.icone-social a {
+    width: 40px;
+    height: 40px;
+    display: inline-block;  
+    text-indent: -99999px; /*joga o texto do link pra fora da página*/
+}
+
+.github{
+    background-image: url("../icons/github.png");
+}
+
+.twitter{
+    background-image: url("../icons/twitter.png");
+}
+
+.linkedin{
+    background-image: url("../icons/linkedin.png");
 }
 
 strong {
@@ -90,8 +136,10 @@ em {
 	font-style: italic;
 }
 
-h2 {
-	font-size: 30px;
+article {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
 }
 
 .leia-mais {
@@ -101,4 +149,19 @@ h2 {
     font-size: 24px;
     text-align: center;
     background-color: #E6E7E8;
+}
+
+
+section{
+    clear: left;
+}
+
+.rodape {
+	background-color: #000;
+    color: #F2FFFC;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
 }
