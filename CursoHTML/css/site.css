@@ -150,4 +150,9 @@ irmão ~ irmão ~:depois
 irmão + irmão seguinte +:logo depois
 pai > filho
 
+
+[src$=".jpg"] seleciona todo os elementos que possuem o atributo src e que o conteúdo termine em .jpg
+
+[href^="http://"] seleciona qlqr elemento que possui o atributo href que começa com http://
+
 */
