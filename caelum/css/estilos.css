@@ -49,6 +49,13 @@ header{
     color:#003366;
 }
 
+.menu-opcoes a:hover {
+    color:#007DC6; 
+}
+.menu-opcoes a:active {
+    color:#867DC6; 
+}
+
 .destaque{
     margin-top: 10px;
 }
@@ -79,6 +86,7 @@ header{
 
 .busca input[type=search] {
     width:170px; 
+    border-radius:15px;
 }
 
 .busca button{
@@ -97,6 +105,23 @@ header{
     padding:5px 10px; 
 }
 
+.menu-departamentos li ul {
+   display: none;
+}
+
+.menu-departamentos li:hover ul {
+    display: block;
+ }
+
+.menu-departamentos ul ul li {
+     background-color:#DCDCDC; 
+}
+
+.menu-departamentos li li a::before {
+    content:'\272A';
+    padding-right:3px;
+}
+
 .menu-departamentos {
     clear: left; 
 }
@@ -111,13 +136,18 @@ header{
     margin:10px 0;
     padding:10px;
     width:445px;
+
+    border-radius:4px;
+    box-shadow: inset 1px 1px 4px #999;
 }
 
 .novidades {
     float: left; 
+    background: linear-gradient(#F5DCDC, #BEBEF4);
 }
 .mais-vendidos {
     float: right;
+    background: linear-gradient(#DCDCF5, #F4BEBE);
 }
 
 .painel li {
@@ -133,6 +163,8 @@ header{
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom:10px; 
+
+    text-shadow:3px 3px 2px #FFF;
 }
 
 
