@@ -39,7 +39,27 @@ p {
 	border: 10px solid #C2CCCA;
 	width: 250px;
 	box-sizing: border-box;
-	margin: 20px 40px;
+    margin: 20px 40px;
+
+}
+
+.citacoes > p {
+    position: relative;
+}
+
+blockquote::before {
+    content: '"';
+    font-size: 10em;
+    position: absolute;
+    color: #bbb;
+    line-height: .8;
+}
+
+.citacoes:hover,
+.citacoes:focus{
+     box-shadow: 0 0 0 99999px rgba(0,0,0,.8);
+     transform: scale(1.2);
+     transition: transform .7s;
 }
 
 .citacoes, aside, footer {
